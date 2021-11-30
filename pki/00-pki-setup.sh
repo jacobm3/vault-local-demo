@@ -4,6 +4,9 @@ vault secrets tune -max-lease-ttl=87600h pki
 
 vault write pki/root/generate/internal common_name=hashicorp.com ttl=87600h 
 
+# import the issuing CA cert into Windows like this from an admin powershell - 
+# PS C:\users\jacob>  certutil -addstore -enterprise -f "Root" test-ca.pem
+
 vault write pki/config/urls \
     issuing_certificates="http://vault.hashicorp.com:8200/v1/pki/ca" \
     crl_distribution_points="http://vault.hashicorp.com:8200/v1/pki/crl"
