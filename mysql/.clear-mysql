@@ -1,0 +1,5 @@
+sudo mysql -uroot <<EOF
+DROP DATABASE IF EXISTS dvwa;
+USE mysql;
+DELETE FROM user WHERE User LIKE 'v-approle-%';
+EOF

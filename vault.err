@@ -1,0 +1,110 @@
+2021-11-30T11:24:52.701-0600 [INFO]  proxy environment: http_proxy="\"\"" https_proxy="\"\"" no_proxy="\"\""
+2021-11-30T11:24:52.701-0600 [WARN]  no `api_addr` value specified in config or in VAULT_API_ADDR; falling back to detection if possible, but this value should be manually set
+2021-11-30T11:24:52.701-0600 [DEBUG] core: set config: sanitized config="{\"api_addr\":\"\",\"cache_size\":0,\"cluster_addr\":\"\",\"cluster_cipher_suites\":\"\",\"cluster_name\":\"\",\"default_lease_ttl\":0,\"default_max_request_duration\":0,\"disable_cache\":false,\"disable_clustering\":false,\"disable_indexing\":false,\"disable_mlock\":true,\"disable_performance_standby\":false,\"disable_printable_check\":false,\"disable_sealwrap\":false,\"disable_sentinel_trace\":false,\"enable_response_header_hostname\":false,\"enable_response_header_raft_node_id\":false,\"enable_ui\":true,\"listeners\":[{\"config\":{\"address\":\"127.0.0.1:8200\",\"proxy_protocol_authorized_addrs\":\"127.0.0.1:8200\",\"proxy_protocol_behavior\":\"allow_authorized\",\"tls_disable\":true},\"type\":\"tcp\"}],\"log_format\":\"unspecified\",\"log_level\":\"\",\"max_lease_ttl\":0,\"pid_file\":\"\",\"plugin_directory\":\"\",\"raw_storage_endpoint\":false,\"seals\":[{\"disabled\":false,\"type\":\"shamir\"}],\"storage\":{\"cluster_addr\":\"\",\"disable_clustering\":false,\"redirect_addr\":\"\",\"type\":\"inmem\"},\"telemetry\":{\"add_lease_metrics_namespace_labels\":false,\"circonus_api_app\":\"\",\"circonus_api_token\":\"\",\"circonus_api_url\":\"\",\"circonus_broker_id\":\"\",\"circonus_broker_select_tag\":\"\",\"circonus_check_display_name\":\"\",\"circonus_check_force_metric_activation\":\"\",\"circonus_check_id\":\"\",\"circonus_check_instance_id\":\"\",\"circonus_check_search_tag\":\"\",\"circonus_check_tags\":\"\",\"circonus_submission_interval\":\"\",\"circonus_submission_url\":\"\",\"disable_hostname\":true,\"dogstatsd_addr\":\"\",\"dogstatsd_tags\":null,\"lease_metrics_epsilon\":3600000000000,\"maximum_gauge_cardinality\":500,\"metrics_prefix\":\"\",\"num_lease_metrics_buckets\":168,\"prometheus_retention_time\":86400000000000,\"stackdriver_debug_logs\":false,\"stackdriver_location\":\"\",\"stackdriver_namespace\":\"\",\"stackdriver_project_id\":\"\",\"statsd_address\":\"\",\"statsite_address\":\"\",\"usage_gauge_period\":600000000000}}"
+2021-11-30T11:24:52.703-0600 [INFO]  core: using autoloaded license: license="{\"license_id\":\"8dcd99d8-576d-10de-9c81-8ccdf3390b1f\",\"customer_id\":\"47ce73cc-eb47-2f57-013e-1d5d29203d06\",\"installation_id\":\"*\",\"issue_time\":\"2020-10-05T02:40:41.798946552Z\",\"start_time\":\"2020-10-05T00:00:00Z\",\"expiration_time\":\"2031-10-05T00:00:00Z\",\"flags\":{\"modules\":[\"governance-policy\",\"multi-dc-scale\",\"advanced-data-protection\"]},\"features\":[\"HSM\",\"Performance Replication\",\"DR Replication\",\"MFA\",\"Sentinel\",\"Seal Wrapping\",\"Control Groups\",\"Performance Standby\",\"Namespaces\",\"KMIP\",\"Entropy Augmentation\",\"Transform Secrets Engine\",\"Lease Count Quotas\",\"Key Management Secrets Engine\",\"Automated Snapshots\"],\"performance_standby_count\":9999}"
+2021-11-30T11:24:52.703-0600 [DEBUG] storage.cache: creating LRU cache: size=0
+2021-11-30T11:24:52.704-0600 [INFO]  core: Initializing VersionTimestamps for core
+2021-11-30T11:24:52.704-0600 [DEBUG] cluster listener addresses synthesized: cluster_addresses=[127.0.0.1:8201]
+2021-11-30T11:24:52.704-0600 [INFO]  core: security barrier not initialized
+2021-11-30T11:24:52.705-0600 [INFO]  core: security barrier initialized: stored=1 shares=1 threshold=1
+2021-11-30T11:24:52.705-0600 [DEBUG] core: cluster name not found/set, generating new
+2021-11-30T11:24:52.705-0600 [DEBUG] core: cluster name set: name=vault-cluster-5a10e7ba
+2021-11-30T11:24:52.705-0600 [DEBUG] core: cluster ID not found, generating new
+2021-11-30T11:24:52.705-0600 [DEBUG] core: cluster ID set: id=fa92be93-22f3-85eb-a9e0-5ce2e2acdb35
+2021-11-30T11:24:52.705-0600 [INFO]  core: post-unseal setup starting
+2021-11-30T11:24:52.705-0600 [DEBUG] core: clearing forwarding clients
+2021-11-30T11:24:52.705-0600 [DEBUG] core: done clearing forwarding clients
+2021-11-30T11:24:52.705-0600 [DEBUG] sealwrap: checking upgrades
+2021-11-30T11:24:52.705-0600 [DEBUG] sealwrap: upgrade completed successfully
+2021-11-30T11:24:52.705-0600 [DEBUG] core: successfully upgraded barrier config
+2021-11-30T11:24:52.705-0600 [DEBUG] core: persisting feature flags
+2021-11-30T11:24:52.709-0600 [INFO]  core: loaded wrapping token key
+2021-11-30T11:24:52.709-0600 [INFO]  core: Recorded vault version: vault version=1.9.0 upgrade time="2021-11-30 11:24:52.7094187 -0600 CST m=+0.153585101"
+2021-11-30T11:24:52.709-0600 [INFO]  core: successfully setup plugin catalog: plugin-directory="\"\""
+2021-11-30T11:24:52.709-0600 [INFO]  core: no mounts; adding default mount table
+2021-11-30T11:24:52.710-0600 [INFO]  core: successfully mounted backend: type=cubbyhole path=cubbyhole/
+2021-11-30T11:24:52.710-0600 [INFO]  core: successfully mounted backend: type=system path=sys/
+2021-11-30T11:24:52.711-0600 [INFO]  core: successfully mounted backend: type=identity path=identity/
+2021-11-30T11:24:52.712-0600 [INFO]  core: successfully enabled credential backend: type=token path=token/
+2021-11-30T11:24:52.713-0600 [INFO]  rollback: starting rollback manager
+2021-11-30T11:24:52.713-0600 [INFO]  core: restoring leases
+2021-11-30T11:24:52.713-0600 [DEBUG] identity: loading entities
+2021-11-30T11:24:52.713-0600 [DEBUG] identity: entities collected: num_existing=0
+2021-11-30T11:24:52.714-0600 [DEBUG] expiration: collecting leases
+2021-11-30T11:24:52.714-0600 [INFO]  identity: entities restored
+2021-11-30T11:24:52.714-0600 [DEBUG] identity: identity loading groups
+2021-11-30T11:24:52.714-0600 [DEBUG] identity: groups collected: num_existing=0
+2021-11-30T11:24:52.714-0600 [INFO]  identity: groups restored
+2021-11-30T11:24:52.714-0600 [DEBUG] identity: identity loading OIDC clients
+2021-11-30T11:24:52.714-0600 [DEBUG] expiration: leases collected: num_existing=0
+2021-11-30T11:24:52.714-0600 [DEBUG] mfa: loading configurations
+2021-11-30T11:24:52.714-0600 [DEBUG] mfa: configurations collected: num_existing=0
+2021-11-30T11:24:52.714-0600 [INFO]  mfa: configurations restored
+2021-11-30T11:24:52.714-0600 [INFO]  expiration: lease restore complete
+2021-11-30T11:24:52.714-0600 [INFO]  core: stopping replication
+2021-11-30T11:24:52.714-0600 [INFO]  core: closed sync connection
+2021-11-30T11:24:52.714-0600 [INFO]  core: replication stopped
+2021-11-30T11:24:52.714-0600 [INFO]  core: setting up replication
+2021-11-30T11:24:52.714-0600 [INFO]  core: replicated cluster information not found or disabled, not activating client
+2021-11-30T11:24:52.714-0600 [INFO]  core: replication setup finished
+2021-11-30T11:24:52.714-0600 [INFO]  core: post-unseal setup complete
+2021-11-30T11:24:52.716-0600 [INFO]  core: root token generated
+2021-11-30T11:24:52.716-0600 [INFO]  core: pre-seal teardown starting
+2021-11-30T11:24:52.716-0600 [INFO]  core: stopping replication
+2021-11-30T11:24:52.716-0600 [INFO]  core: closed sync connection
+2021-11-30T11:24:52.716-0600 [INFO]  core: replication stopped
+2021-11-30T11:24:52.716-0600 [DEBUG] expiration: stop triggered
+2021-11-30T11:24:52.716-0600 [DEBUG] expiration: finished stopping
+2021-11-30T11:24:52.716-0600 [INFO]  rollback: stopping rollback manager
+2021-11-30T11:24:52.716-0600 [DEBUG] sealwrap: stopping upgrades
+2021-11-30T11:24:52.716-0600 [INFO]  core: pre-seal teardown complete
+2021-11-30T11:24:52.716-0600 [DEBUG] core: unseal key supplied: migrate=false
+2021-11-30T11:24:52.716-0600 [DEBUG] core: starting cluster listeners
+2021-11-30T11:24:52.716-0600 [INFO]  core.cluster-listener.tcp: starting listener: listener_address=127.0.0.1:8201
+2021-11-30T11:24:52.716-0600 [INFO]  core.cluster-listener: serving cluster requests: cluster_listen_address=127.0.0.1:8201
+2021-11-30T11:24:52.717-0600 [INFO]  core: post-unseal setup starting
+2021-11-30T11:24:52.717-0600 [DEBUG] core: clearing forwarding clients
+2021-11-30T11:24:52.717-0600 [DEBUG] core: done clearing forwarding clients
+2021-11-30T11:24:52.717-0600 [DEBUG] sealwrap: checking upgrades
+2021-11-30T11:24:52.717-0600 [DEBUG] sealwrap: upgrade completed successfully
+2021-11-30T11:24:52.717-0600 [DEBUG] core: successfully upgraded barrier config
+2021-11-30T11:24:52.717-0600 [DEBUG] core: persisting feature flags
+2021-11-30T11:24:52.718-0600 [INFO]  core: loaded wrapping token key
+2021-11-30T11:24:52.718-0600 [INFO]  core: successfully setup plugin catalog: plugin-directory="\"\""
+2021-11-30T11:24:52.719-0600 [INFO]  core: successfully mounted backend: type=system path=sys/
+2021-11-30T11:24:52.719-0600 [INFO]  core: successfully mounted backend: type=identity path=identity/
+2021-11-30T11:24:52.719-0600 [INFO]  core: successfully mounted backend: type=cubbyhole path=cubbyhole/
+2021-11-30T11:24:52.721-0600 [INFO]  core: successfully enabled credential backend: type=token path=token/
+2021-11-30T11:24:52.721-0600 [INFO]  rollback: starting rollback manager
+2021-11-30T11:24:52.721-0600 [INFO]  core: restoring leases
+2021-11-30T11:24:52.722-0600 [DEBUG] identity: loading entities
+2021-11-30T11:24:52.722-0600 [DEBUG] identity: entities collected: num_existing=0
+2021-11-30T11:24:52.722-0600 [INFO]  identity: entities restored
+2021-11-30T11:24:52.722-0600 [DEBUG] identity: identity loading groups
+2021-11-30T11:24:52.722-0600 [DEBUG] identity: groups collected: num_existing=0
+2021-11-30T11:24:52.722-0600 [INFO]  identity: groups restored
+2021-11-30T11:24:52.722-0600 [DEBUG] identity: identity loading OIDC clients
+2021-11-30T11:24:52.722-0600 [DEBUG] expiration: collecting leases
+2021-11-30T11:24:52.722-0600 [DEBUG] expiration: leases collected: num_existing=0
+2021-11-30T11:24:52.722-0600 [DEBUG] mfa: loading configurations
+2021-11-30T11:24:52.722-0600 [DEBUG] mfa: configurations collected: num_existing=0
+2021-11-30T11:24:52.722-0600 [INFO]  mfa: configurations restored
+2021-11-30T11:24:52.722-0600 [INFO]  expiration: lease restore complete
+2021-11-30T11:24:52.722-0600 [INFO]  core: stopping replication
+2021-11-30T11:24:52.722-0600 [INFO]  core: closed sync connection
+2021-11-30T11:24:52.722-0600 [INFO]  core: replication stopped
+2021-11-30T11:24:52.722-0600 [INFO]  core: setting up replication
+2021-11-30T11:24:52.723-0600 [INFO]  core: replicated cluster information not found or disabled, not activating client
+2021-11-30T11:24:52.723-0600 [INFO]  core: replication setup finished
+2021-11-30T11:24:52.723-0600 [INFO]  core: post-unseal setup complete
+2021-11-30T11:24:52.723-0600 [INFO]  core: vault is unsealed
+2021-11-30T11:24:52.725-0600 [INFO]  expiration: revoked lease: lease_id=auth/token/root/h102fad263c10d8fa2ecac90444891ced81a778572e97765a70787fc5da48be45
+2021-11-30T11:24:52.729-0600 [INFO]  core: successful mount: namespace="\"\"" path=secret/ type=kv
+2021-11-30T11:24:52.729-0600 [DEBUG] would have sent systemd notification (systemd not present): notification=READY=1
+2021-11-30T11:24:52.739-0600 [INFO]  secrets.kv.kv_cf8147f9: collecting keys to upgrade
+2021-11-30T11:24:52.739-0600 [INFO]  secrets.kv.kv_cf8147f9: done collecting keys: num_keys=1
+2021-11-30T11:24:52.739-0600 [DEBUG] secrets.kv.kv_cf8147f9: upgrading keys: progress=0/1
+2021-11-30T11:24:52.739-0600 [INFO]  secrets.kv.kv_cf8147f9: upgrading keys finished
+2021-11-30T11:24:53.839-0600 [DEBUG] audit: adding reload function: path=file/
+2021-11-30T11:24:53.839-0600 [DEBUG] audit: file backend options: path=file/ file_path=audit
+2021-11-30T11:24:53.840-0600 [INFO]  core: enabled audit backend: path=file/ type=file

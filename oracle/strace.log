@@ -1,0 +1,220 @@
+strace: Process 5808 attached with 14 threads
+[pid  5812] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5815] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5812] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5815] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5815] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5815] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5815] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5815] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5815] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5815] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5815] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5815] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5814] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5815] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5815] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5817] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5812] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5812] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5814] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5817] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5815] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5815] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5815] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5815] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5814] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5815] accept4(7, {sa_family=AF_INET, sin_port=htons(45822), sin_addr=inet_addr("127.0.0.1")}, [112->16], SOCK_CLOEXEC|SOCK_NONBLOCK) = 9
+[pid  5815] getsockname(9, {sa_family=AF_INET, sin_port=htons(8200), sin_addr=inet_addr("127.0.0.1")}, [112->16]) = 0
+[pid  5815] setsockopt(9, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+[pid  5815] setsockopt(9, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+[pid  5815] setsockopt(9, SOL_TCP, TCP_KEEPINTVL, [15], 4) = 0
+[pid  5815] setsockopt(9, SOL_TCP, TCP_KEEPIDLE, [15], 4) = 0
+[pid  5815] setsockopt(9, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+[pid  5815] setsockopt(9, SOL_TCP, TCP_KEEPINTVL, [180], 4) = 0
+[pid  5815] setsockopt(9, SOL_TCP, TCP_KEEPIDLE, [180], 4) = 0
+[pid  5815] accept4(7, 0xc0010a0a70, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5815] accept4(7, {sa_family=AF_INET, sin_port=htons(45824), sin_addr=inet_addr("127.0.0.1")}, [112->16], SOCK_CLOEXEC|SOCK_NONBLOCK) = 9
+[pid  5815] getsockname(9, {sa_family=AF_INET, sin_port=htons(8200), sin_addr=inet_addr("127.0.0.1")}, [112->16]) = 0
+[pid  5815] setsockopt(9, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+[pid  5815] setsockopt(9, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+[pid  5815] setsockopt(9, SOL_TCP, TCP_KEEPINTVL, [15], 4) = 0
+[pid  5815] setsockopt(9, SOL_TCP, TCP_KEEPIDLE, [15], 4) = 0
+[pid  5815] setsockopt(9, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+[pid  5815] setsockopt(9, SOL_TCP, TCP_KEEPINTVL, [180], 4) = 0
+[pid  5815] setsockopt(9, SOL_TCP, TCP_KEEPIDLE, [180], 4) = 0
+[pid  5815] accept4(7, 0xc0010a0a70, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5815] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5812] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5815] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5817] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5814] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] accept4(7, {sa_family=AF_INET, sin_port=htons(45826), sin_addr=inet_addr("127.0.0.1")}, [112->16], SOCK_CLOEXEC|SOCK_NONBLOCK) = 9
+[pid  5812] getsockname(9, {sa_family=AF_INET, sin_port=htons(8200), sin_addr=inet_addr("127.0.0.1")}, [112->16]) = 0
+[pid  5812] setsockopt(9, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+[pid  5812] setsockopt(9, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+[pid  5812] setsockopt(9, SOL_TCP, TCP_KEEPINTVL, [15], 4) = 0
+[pid  5812] setsockopt(9, SOL_TCP, TCP_KEEPIDLE, [15], 4) = 0
+[pid  5812] setsockopt(9, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+[pid  5812] setsockopt(9, SOL_TCP, TCP_KEEPINTVL, [180], 4) = 0
+[pid  5812] setsockopt(9, SOL_TCP, TCP_KEEPIDLE, [180], 4) = 0
+[pid  5812] accept4(7, 0xc0010a0a70, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5817] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5814] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5812] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5814] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5812] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5812] accept4(7, {sa_family=AF_INET, sin_port=htons(45828), sin_addr=inet_addr("127.0.0.1")}, [112->16], SOCK_CLOEXEC|SOCK_NONBLOCK) = 9
+[pid  5812] getsockname(9, {sa_family=AF_INET, sin_port=htons(8200), sin_addr=inet_addr("127.0.0.1")}, [112->16]) = 0
+[pid  5812] setsockopt(9, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+[pid  5812] setsockopt(9, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+[pid  5812] setsockopt(9, SOL_TCP, TCP_KEEPINTVL, [15], 4) = 0
+[pid  5812] setsockopt(9, SOL_TCP, TCP_KEEPIDLE, [15], 4) = 0
+[pid  5812] setsockopt(9, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+[pid  5812] setsockopt(9, SOL_TCP, TCP_KEEPINTVL, [180], 4) = 0
+[pid  5812] setsockopt(9, SOL_TCP, TCP_KEEPIDLE, [180], 4) = 0
+[pid  5812] accept4(7, 0xc0010a0a70, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 11
+[pid  5814] setsockopt(11, SOL_SOCKET, SO_BROADCAST, [1], 4) = 0
+[pid  5814] connect(11, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("192.168.0.1")}, 16 <unfinished ...>
+[pid  7408] socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 12
+[pid  5814] <... connect resumed>)      = 0
+[pid  7408] setsockopt(12, SOL_SOCKET, SO_BROADCAST, [1], 4) = 0
+[pid  7408] connect(12, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("192.168.0.1")}, 16) = 0
+[pid  5814] getsockname(11,  <unfinished ...>
+[pid  7408] getsockname(12,  <unfinished ...>
+[pid  5814] <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(47390), sin_addr=inet_addr("172.18.105.45")}, [112->16]) = 0
+[pid  7408] <... getsockname resumed>{sa_family=AF_INET, sin_port=htons(42445), sin_addr=inet_addr("172.18.105.45")}, [112->16]) = 0
+[pid  5814] getpeername(11,  <unfinished ...>
+[pid  7408] getpeername(12,  <unfinished ...>
+[pid  5814] <... getpeername resumed>{sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("192.168.0.1")}, [112->16]) = 0
+[pid  7408] <... getpeername resumed>{sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("192.168.0.1")}, [112->16]) = 0
+[pid  5812] socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 11
+[pid  5812] connect(11, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("52.46.149.173")}, 16) = -1 EINPROGRESS (Operation now in progress)
+[pid  5814] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  7408] getsockopt(11, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+[pid  7408] getpeername(11, {sa_family=AF_INET, sin_port=htons(443), sin_addr=inet_addr("52.46.149.173")}, [112->16]) = 0
+[pid  7408] getsockname(11, {sa_family=AF_INET, sin_port=htons(56764), sin_addr=inet_addr("172.18.105.45")}, [112->16]) = 0
+[pid  7408] setsockopt(11, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+[pid  7408] setsockopt(11, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+[pid  7408] setsockopt(11, SOL_TCP, TCP_KEEPINTVL, [30], 4) = 0
+[pid  7408] setsockopt(11, SOL_TCP, TCP_KEEPIDLE, [30], 4) = 0
+[pid  5812] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  7408] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  7408] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5815] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5811] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5817] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5815] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5815] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5815] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  7408] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  7408] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  7408] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  7408] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  7408] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  7408] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5811] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  5811] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  7408] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  7408] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  7408] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+[pid  7408] --- SIGURG {si_signo=SIGURG, si_code=SI_TKILL, si_pid=5808, si_uid=1000} ---
+[pid  5814] accept4(8, 0xc00109ba68, [112], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+strace: Process 5808 detached
+strace: Process 5810 detached
+strace: Process 5811 detached
+strace: Process 5812 detached
+strace: Process 5813 detached
+strace: Process 5814 detached
+strace: Process 5815 detached
+strace: Process 5816 detached
+strace: Process 5817 detached
+strace: Process 5818 detached
+strace: Process 5820 detached
+strace: Process 5821 detached
+strace: Process 5822 detached
+strace: Process 7408 detached

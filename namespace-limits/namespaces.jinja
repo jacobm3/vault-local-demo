@@ -1,0 +1,16 @@
+{% for name in workspaces %}
+resource "tfe_workspace" "{{name}}" {
+  name         = "{{name}}"
+  organization = "coinbank"
+  depends_on = [null_resource.az-cli]
+
+  provisioner "local-exec" {
+    command = <<EOF
+      az repos create --organization ${var.ado_org_url} \
+      --project ${var.ado_project} \
+      --name {{name}}
+EOF
+  }
+}
+
+{% endfor %}

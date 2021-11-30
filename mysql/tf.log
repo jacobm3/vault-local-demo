@@ -1,0 +1,7 @@
+2019/06/27 18:15:31 [INFO] Terraform version: 0.11.14  
+2019/06/27 18:15:31 [INFO] Go runtime version: go1.12.4
+2019/06/27 18:15:31 [INFO] CLI args: []string{"/home/jacob/bin/terraform-0.11.14", "-help"}
+2019/06/27 18:15:31 [DEBUG] Attempting to open CLI config file: /home/jacob/.terraformrc
+2019/06/27 18:15:31 Loading CLI configuration from /home/jacob/.terraformrc
+2019/06/27 18:15:31 [INFO] CLI command args: []string{"-help"}
+2019/06/27 18:15:31 [DEBUG] plugin: waiting for all plugin processes to complete...
