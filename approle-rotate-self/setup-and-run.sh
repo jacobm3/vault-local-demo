@@ -5,11 +5,14 @@ vault read auth/approle/role/jenkins/role-id
 vault write -force auth/approle/role/jenkins/secret-id
 vault read auth/approle/role/jenkins
 
+# substitute your correct approle mount accessor (vault auth list)
 vault policy write rotate-my-secret-id - << EOF
-
-path "auth/approle/role/{{identity.entity.metadata.role_name}}/secret-id" {
-  capabilities = [ "update" ]
+path "auth/approle/role/{{identity.entity.aliases.<auth_approle_51dba4f3>.metadata.role_name}}/secret-id" {
+  capabilities = [ "read","create","update","delete","list","sudo" ]
 }
+EOF
+
+vault policy write rotate-own-secret-id - << EOF
 
 EOF
 
