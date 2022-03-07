@@ -4,9 +4,39 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
+.terraformrc
+terraform.rc
 
-# Crash log files
-crash.log
+*.log
+*.err
+*.debug
+*.pem
+*.crt
+*.csr
+*.key
+*.p7b
+*tfplan*
+*.audit
+audit
+
+*token
+
+*tmp*
+*.bak*
+
+*pass
+*passwd
+*password
+
+*snap
+init
+init.json
+init.txt
+init.out
+*hclic
+license.txt
+
+secret.tfvars
 
 # Ignore any .tfvars files that are generated automatically for each Terraform run. Most
 # .tfvars files are managed as part of configuration and so should be included in
@@ -27,7 +57,3 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
-
-*.err
-*.log
-*.debug
