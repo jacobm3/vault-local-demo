@@ -1,9 +1,6 @@
-#!/bin/bash -x
-
-export LD_LIBRARY_PATH=/opt/oracle/instantclient_21_3:$LD_LIBRARY_PATH
+#!/bin/bash
 
 # export VAULT_LICENSE=... 
-. ~/.vault-license
 
 # Clean any existing environment/processes
 sudo pkill vault
@@ -17,12 +14,10 @@ rm -f ~/.vault-token
 
 export VAULT_LOG_LEVEL=debug
 
-
 # State Vault server in dev mode
 mkdir -p log
 vault server -dev -dev-root-token-id=root -config=vault.hcl \
     >vault.log 2>vault.err &
-
 
 #vault server -dev -dev-root-token-id=root 
 
@@ -32,6 +27,7 @@ vault login root
 
 vault audit enable file file_path=audit
 
+curl  -H "X-Vault-Token: $(cat ~/.vault-token)" localhost:8200/v1/sys/metrics | head 
+
 vault status
 
-curl  -H "X-Vault-Token: $(cat ~/.vault-token)" localhost:8200/v1/sys/metrics
