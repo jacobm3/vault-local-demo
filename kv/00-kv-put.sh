@@ -1,6 +1,15 @@
 #!/bin/bash -x 
 
-# vault secrets enable -version=2 -path=secret kv
+vault secrets disable secret
+vault secrets enable -version=2 -path=secret kv
+
+vault secrets tune \
+  -audit-non-hmac-response-keys=description \
+  -audit-non-hmac-response-keys=accessor \
+  -audit-non-hmac-response-keys=client_token_accessor \
+  -audit-non-hmac-request-keys=accessor \
+  -audit-non-hmac-request-keys=client_token_accessor \
+  secret
 
 vault kv put secret/hello foo=world excited=yes
 

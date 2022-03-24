@@ -16,7 +16,7 @@ export VAULT_LOG_LEVEL=debug
 
 # State Vault server in dev mode
 mkdir -p log
-vault server -dev -dev-root-token-id=root -config=vault.hcl \
+vault-1.9.4+ent server -dev -dev-root-token-id=root -config=vault.hcl \
     >vault.log 2>vault.err &
 
 #vault server -dev -dev-root-token-id=root 
