@@ -1,5 +1,14 @@
+listener "tcp" {
+  address = "0.0.0.0:8200"
+  tls_cert_file = "tls.crt"
+  tls_key_file  = "tls.key"
+}
 
-license_path = "/home/jacob/.vault-license"
+storage "file" {
+  path = "data"
+}
 
-#disable_clustering = true
-#plugin_directory="/usr/local/lib"
+license_path = "/home/ubuntu/.vault-license"
+disable_mlock = true
+log_level = "debug"
+ui = true

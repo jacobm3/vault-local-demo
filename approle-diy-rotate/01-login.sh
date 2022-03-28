@@ -1,5 +1,8 @@
-vault write auth/approle/login role_id="ec3ca7b8-50fc-8437-79c3-dd0f1cedb5f8" \
-    secret_id="753128db-ec89-dd54-2d67-148a8b740958"
+#!/bin/bash
+roleid=$(cat role-id.json | jq -r .data.role_id)
+secretid=$(cat secret-id.json | jq -r .data.secret_id)
+vault write auth/approle/login role_id="$roleid" \
+    secret_id="$secretid"
 
 vault write -force auth/approle/role/jenkins/secret-id
 

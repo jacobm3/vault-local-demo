@@ -1,7 +1,21 @@
-vault namespace create pci
-vault namespace create -namespace=pci card-app1
-vault namespace create -namespace=pci card-app2
-vault namespace create standard
-vault namespace create -namespace=standard std-app1
-vault namespace create -namespace=standard std-app2
+#!/bin/bash
+
+set -e
+set -x
+
+vault namespace create poc
+
+export VAULT_NAMESPACE=poc
+
+vault policy write namespace-admin - <<EOF
+
+path "*" {
+  capabilities = ["create", "read", "update", "delete", "list", "sudo"]
+}
+
+EOF
+
+vault auth enable userpass
+
+vault write auth/userpass/users/john.doe password=$(openssl rand -base64 12) policies=namespace-admin
 

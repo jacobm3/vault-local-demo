@@ -1,8 +1,16 @@
+
 vault auth enable approle
+
+vault auth tune \
+  -audit-non-hmac-response-keys=secret_id_accessor \
+  approle
+
+
+
 vault write auth/approle/role/jenkins token_policies="rotate-my-secret-id" \
     token_ttl=1h token_max_ttl=4h
-vault read auth/approle/role/jenkins/role-id
-vault write -force auth/approle/role/jenkins/secret-id
+vault read -format=json auth/approle/role/jenkins/role-id > role-id.json
+vault write -format=json -force auth/approle/role/jenkins/secret-id > secret-id.json
 vault read auth/approle/role/jenkins
 
 vault policy write rotate-my-secret-id - << EOF
