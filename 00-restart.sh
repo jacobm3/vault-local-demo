@@ -8,9 +8,9 @@ while [ "$(pgrep vault)" ]; do
   sleep 0.5
 done
 
-export VAULT_ADDR=https://127.0.0.1:8200
+export VAULT_ADDR=https://localhost.theneutral.zone:8200
 echo
-echo export VAULT_ADDR=https://127.0.0.1:8200
+echo export VAULT_ADDR=https://localhost.theneutral.zone:8200
 echo unset VAULT_TOKEN
 echo
 rm -f ~/.vault-token 
