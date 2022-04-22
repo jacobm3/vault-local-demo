@@ -16,9 +16,9 @@ Assuming the customer has a working file audit device configured and a socket de
 - No response from log server
   - Either no response to TCP SYN, or no ACK on established connection
   - Can happen if the remote server falls off the network completely and nothing responds on its IP/MAC.
--   Also happens if a firewall (on the network or kernel/iptables) drops the connection with no packets going back to Vault (DROP target).
--   Also happens if the listening log process is too busy to respond or if the machine is swapping.
--   Vault hangs for 8 seconds on each non-responsive socket device.
+  - Also happens if a firewall (on the network or kernel/iptables) drops the connection with no packets going back to Vault (DROP target).
+  - Also happens if the listening log process is too busy to respond or if the machine is swapping.
+  - Vault hangs for 8 seconds on each non-responsive socket device.
 
 
 
