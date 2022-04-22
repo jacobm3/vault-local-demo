@@ -27,11 +27,18 @@ Assuming the customer has a working file audit device configured and a socket de
 
 You don't need a socket log server for this demo. 
 
-1. ./audit-setup.sh # configures a file and a socket audit device (localhost:1515, you don't actually need anything listening there)
-1. time vault secrets list # should be fast.
-1. ./iptables-drop.sh # drop connections on tcp/1515
-1. ./big-kv.sh - fill the audit log buffer? Not sure why this is needed to repro next step.
-1. time vault secrets list # should be slow. Vault waits 8s for a server response that never arrives.
-1. ./iptables-flush.sh # remove drop rule. 
-1. time vault secrets list # should be fast.
+1. ./audit-setup.sh 
+  1. Configures a file and a socket audit device (localhost:1515, you don't actually need anything listening there)
+3. time vault secrets list 
+  4. Should be fast.
+5. ./iptables-drop.sh 
+  6. Drop connections on tcp/1515
+7. ./big-kv.sh
+  8. Fill the audit log buffer? Not sure why this is needed to repro next step.
+9. time vault secrets list
+  10. Should be slow. Vault waits 8s for a server response that never arrives.
+11. ./iptables-flush.sh
+  12. Remove drop rule. 
+13. time vault secrets list 
+  14. Should be fast.
 
