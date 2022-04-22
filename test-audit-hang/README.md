@@ -42,3 +42,10 @@ You don't need a socket log server for this demo.
 - time vault secrets list 
   - Should be fast.
 
+# Solutions / Workarounds
+
+- Lower the timeout Vault uses when writing to socket audit devices. (simple)
+- Implement a robust, async audit log buffer system in Vault that will reliably store audit messages in a temp directory and deliver when the audit device is back online (complex)
+- Suggest customers log to a localhost socket, like syslog-ng, which uses existing, robust memory/disk buffers to reliably forward to network log servers. (simple to implement, but moves a portion of the audit configuration outside of Vault's crypto barrier)
+
+
