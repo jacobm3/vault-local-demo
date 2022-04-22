@@ -1,6 +1,6 @@
 # Vault hangs with non-responsive audit socket
 
-Vault will skip non-functioning audit device as long as it can successfully log the audit message to one audit device. 
+Vault will skip non-functioning audit devices as long as it can successfully log the audit message to one audit device. Vault may hang for 8 seconds per device under some circumstances.
 
 Assuming the customer has a working file audit device configured and a socket device of varying behavior, this is a list of possible socket responses, their causes, and resulting Vault behavior:
 
