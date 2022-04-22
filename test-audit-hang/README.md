@@ -11,7 +11,7 @@ Assuming the customer has a working file audit device configured and a socket de
 - TCP RST
   - The remote server is up but there is no process listening on that port, so the TCP/IP stack sends an immediate RST, letting Vault know there's no service there.
   - Can also happen if a firewall blocks the connection with a reject/RST policy
-  - Vault will immediately understand this audit device won't work and moves to the next one.
+  - Vault immediately understands this audit device won't work and moves to the next one.
   - Vault responds to the client quickly.
 - No response from log server
   - Either no response to TCP SYN, or no ACK on established connection
