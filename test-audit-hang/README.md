@@ -34,7 +34,7 @@ You don't need a socket log server for this demo.
 - ./iptables-drop.sh 
   - Drop connections on tcp/1515
 - ./big-kv.sh
-  - Fill the audit log buffer? Not sure why this is needed to repro next step.
+  - Consume the available TCP window buffer? Not sure exactly why else this is needed to reproduce the problem quickly.
 - time vault secrets list
   - Should be slow. Vault waits 8s for a server response that never arrives.
 - ./iptables-flush.sh
