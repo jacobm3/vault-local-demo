@@ -2,7 +2,7 @@
 
 ## Intro
 
-These files can be used to start a local Vault instance in dev mode for easy demos of the following engines:
+These files can be used to start a local Vault instance with a file backend for easy demos of the following engines:
 
 - KV
 - Dynamic Mysql credentials
@@ -16,4 +16,5 @@ These files can be used to start a local Vault instance in dev mode for easy dem
 
 The numbered files (NN-step-name.sh) are shell scripts that individually configure Vault. You can walk a customer through these steps individually or just start the first five from start.sh.
 
-
+## Init, Repaving
+reinit.sh will delete everything, reinitialize the storage layer, and restart/unseal.
