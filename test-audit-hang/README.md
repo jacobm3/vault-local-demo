@@ -23,7 +23,7 @@ Assuming the customer has a working file audit device configured and a socket de
 
 
 
-# How to Reproduce Vault
+# How to Reproduce 
 
 You don't need a socket log server for this demo. 
 
