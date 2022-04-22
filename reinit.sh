@@ -8,14 +8,15 @@ while [ "$(pgrep vault)" ]; do
   sleep 0.5
 done
 
+export VAULT_ADDR="https://localhost.theneutral.zone:8200"
+export VAULT_SKIP_VERIFY=1
+unset VAULT_NAMESPACE
+
 rm -fr data vault.log vault.err
 
 vault server -config=vault.hcl >vault.log 2>vault.err &
 
 sleep 1
-
-export VAULT_ADDR="https://localhost.theneutral.zone:8200"
-export VAULT_SKIP_VERIFY=1
 
 vault operator init -format=json -t 1 -n 1 | tee .init.json
 

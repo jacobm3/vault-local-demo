@@ -1,3 +1,8 @@
+#!/bin/bash -x
+
+set -e
+
+
 vault secrets enable transform
 vault write transform/role/payments transformations=card-number
 vault list transform/role
