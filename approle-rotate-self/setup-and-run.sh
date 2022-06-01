@@ -1,3 +1,7 @@
+#!/bin/bash -x 
+
+
+vault auth disable approle
 vault auth enable approle
 vault write auth/approle/role/jenkins token_policies="rotate-my-secret-id" \
     token_ttl=1h token_max_ttl=4h

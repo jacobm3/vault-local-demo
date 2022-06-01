@@ -1,13 +1,12 @@
 #!/bin/bash
 
-set -e
-
 # Clean any existing environment/processes
 while [ "$(pgrep vault)" ]; do
-  pkill vault
+  sudo pkill vault
   sleep 0.5
 done
 
+export VAULT_SKIP_VERIFY=1
 export VAULT_ADDR=https://localhost.theneutral.zone:8200
 echo
 echo export VAULT_ADDR=https://localhost.theneutral.zone:8200

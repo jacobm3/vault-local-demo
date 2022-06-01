@@ -10,5 +10,6 @@ storage "file" {
 
 license_path = "/home/ubuntu/.vault-license"
 disable_mlock = true
-log_level = "debug"
+log_level = "trace"
 ui = true
+

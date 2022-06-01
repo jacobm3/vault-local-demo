@@ -1,0 +1,10 @@
+{
+  "request_id": "fff31667-3a58-4fd2-8122-7fabdb572c6f",
+  "lease_id": "",
+  "lease_duration": 0,
+  "renewable": false,
+  "data": {
+    "role_id": "19c167c4-de21-9898-9ea7-7163dc0155bf"
+  },
+  "warnings": null
+}
