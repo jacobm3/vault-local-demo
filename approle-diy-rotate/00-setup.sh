@@ -1,9 +1,7 @@
 
 vault auth enable approle
 
-vault auth tune \
-  -audit-non-hmac-response-keys=secret_id_accessor \
-  approle
+vault auth tune -audit-non-hmac-request-keys=role_id approle
 
 
 
