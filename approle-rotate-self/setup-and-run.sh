@@ -3,6 +3,8 @@
 
 vault auth disable approle
 vault auth enable approle
+vault auth tune -audit-non-hmac-request-keys=role_id approle
+
 vault write auth/approle/role/jenkins token_policies="rotate-my-secret-id" \
     token_ttl=1h token_max_ttl=4h
 vault read auth/approle/role/jenkins/role-id
