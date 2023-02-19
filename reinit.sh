@@ -9,6 +9,7 @@ while [ "$(pgrep vault)" ]; do
 done
 
 export VAULT_ADDR="https://localhost.theneutral.zone:8200"
+export VAULT_ADDR="http://localhost:8200"
 export VAULT_SKIP_VERIFY=1
 unset VAULT_NAMESPACE
 

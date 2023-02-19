@@ -6,15 +6,14 @@ while [ "$(pgrep vault)" ]; do
   sleep 0.5
 done
 
-export VAULT_SKIP_VERIFY=1
-export VAULT_ADDR=https://localhost.theneutral.zone:8200
+export VAULT_ADDR=http://localhost:8200
 echo
-echo export VAULT_ADDR=https://localhost.theneutral.zone:8200
+echo export VAULT_ADDR=http://localhost:8200
 echo unset VAULT_TOKEN VAULT_NAMESPACE
 echo
 rm -f ~/.vault-token 
 
-vault server -config=vault.hcl >vault.log 2>vault.err &
+vault server -config=vault-no-tls.hcl >vault.log 2>vault.err &
 
 sleep 1 
 
